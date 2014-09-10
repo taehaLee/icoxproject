@@ -1,0 +1,27 @@
+﻿<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title></title>
+<style>
+
+</style>
+</head>
+<body>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js" charset="utf-8"></script>
+<script>
+$('html').hide(function() {
+	alert(1);
+	$(this).show(function() {
+		alert(2);
+	});
+}).hide(function() {
+	alert(3);
+	$(this).hide(function() {
+		alert(4);
+	});
+});
+
+</script>
+</body>
+</html>
